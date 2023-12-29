@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>-->
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link  rel="stylesheet"  href="/swiper.css"
+   />
+    <script src="/script.js"defer></script>
+    <script src="/counting.js"defer></script>
+    <!-- Likn sclick slider' -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+</head>
+<body>
+   <!--<div class="container">-->
+    <nav class="navbar">
+       <div id="navBarLinks" class="navbar-links"> 
+         <ul>
+        <li>  <a class="home" href="#"> HOME </a></li>
+        <li class="models-li">  <a class="models" href="#">MODELS <i class="fa-solid fa-chevron-down"></i></a>       
+          <div class="models-list">
+            <h4>FEATURED MODELS</h4>
+            <button>SHOW ALL CARS</button>          
+            <div class="owl-carousel">
+              <div class="car 1"> 
+                 <img src="/img/menu/1.png" alt="Car">
+                  <span>BMW 1 Series ActiveE  </span>
+              </div>
+              <div class="car 2"> 
+                <img src="/img/menu/2.png" alt="Car">
+                 <span>Mercedes-Benz S-Class  </span>
+                </div>
+              <div class="car 3"> 
+                 <img src="/img/menu/3.png" alt="Car">
+                  <span>Gran Turismo  </span>
+              </div>
+              <div class="car 4"> 
+                 <img src="/img/menu/4.png" alt="Car">
+                  <span> Mclaren 675LT SPIDER</span>
+              </div>
+              <div class="car 5"> 
+                <img src="/img/menu/5.png" alt="Car">
+                 <span>Honda City</span>
+             </div>
+             <div class="car 6"> 
+              <img src="/img/menu/6.png" alt="Car">
+               <span>Toyota Qualis  </span>
+             </div>
+             <div class="car 7"> 
+              <img src="/img/menu/7.png" alt="Car">
+               <span> Honda WR-V</span>
+             </div>
+             <div class="car 8"> 
+              <img src="/img/menu/8.png" alt="Car">
+               <span>Suzuki Breeza </span>
+             </div>
+             <div class="car 9"> 
+              <img src="/img/menu/9.png" alt="Car">
+               <span>Chevrolet Spark  </span>
+             </div>
+             <div class="car 10"> 
+              <img src="/img/menu/10.png" alt="Car">
+              <span>Honda JaZZ  </span>
+             </div>
+            </div>
+          </div>
+        </li>
+        <li>  <a href="#"> CAR LISTING </a></li>
+        <li>  <a href="#"> DEALERS</a></li>
+        <li>  <a href="#"> ACCESSORIES </a></li>
+        <li>  <a href="#"> INTERIORS </a></li>
+        <li>  <a href="#"> FAQS </a></li>
+        <li>  <a href="#"> BLOG </a></li> 
+        <li>  <a href="#"> CONTACTS </a></li>               
+        </ul> 
+      </div>
+        <div class="logo"><a href="#"> <img src="/img/logo.png" alt="logo" > </a></div>
+        <div class="hamburger-menu"><a onclick="muFunc(this)" href="#" id="toogleButton" class="toggle-button">
+           <span class="line top"></span>
+           <span class="line middle"></span> 
+           <span class="line bottom"></span> 
+        </a>
+      </div>
+    </nav>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-1">
+         <!--<div class="animate__animated animate__backInLeft">  </div>--> 
+         <div data-aos="fade-right" data-aos="fade-right" class="slider-text">
+          <div class="slider-title"><h2>Renegade 730s</h2></div>
+            <div class="slider-info"><div> Raise your limits over</div></div>
+            <div class="slider-button"><button>View Details</button></div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-2">
+          <div   data-aos="fade-right" class="slider-text">
+            <div class="slider-title"><h2 data-aos="fade-right">Chevrolet Traverse</h2></div>
+            <div class="slider-info">New and Powerful SUV</div>
+            <div class="slider-button"><button>View Details</button></div>
+           </div>
+        </div>
+        <div  class="swiper-slide swiper-slide-3 ">   
+          <div   data-aos="fade-right" class="slider-text">
+          <div class="slider-title"><h2 data-aos="fade-right">Audi 2021 S5 Cabrilolet</h2></div>
+          <div class="slider-info">A Black Diomond</div>
+          <div class="slider-button"><button>View Details</button></div>
+        </div>     
+    </div>
+     </div> 
+  <div class="swiper-pagination"></div>
+   </div>
+<!-- HOME END **************  ************** *********** -->
+      <div class="menu1"> 
+        <div class="ExtL"> 
+          <div class="menuinfo"> <h3>Exteriors Looks</h3>
+           <span>McLaren 430L →</span>
+          </div>
+        </div>
+        <div class="IntL">
+          <div class="menuinfo">          
+            <h3>Interior Looks</h3>
+            <span>Beautiful Dashing Interiors →</span>
+          </div>
+        </div>
+        <div class="OurS">
+          <div class="menuinfo"> 
+           <h3>Our Stores</h3>
+           <span>Find Out Stores →</span> 
+          </div>
+          </div> 
+      </div>
+    
+
+    <!--  menu 1 finished-->
+ <!--runing car start *******************-->
+    
+          <div class="section mt-0 clearfix" style="padding: 100px 0">
+            <div class="running-car mt-6 in-view">
+            <img class="car" src="/img/car.jpg" alt="Image">
+            <img class="wheel" src="/img/car-tier.png" alt="Image">
+            </div>
+            <div class="container clearfix">
+            <div class="row clearfix" style="position: relative;">
+            <div class="heading-block  ">
+            <h3>Our Fleet<br>Your Fleet</h3>
+            <div >____</div>
+            
+            <p>Assertively iterate enterprise-wide portals through synergistic products. Efficiently build adaptive schemas after transparent quality vectors. Phosfluorescently optimize competitive resources after extensive convergence. Rapidiously optimize high-quality meta-services via distributed architectures. Credibly deliver 24/365.</p>
+          </div>
+            </div>
+            </div>
+            </div>
+          </div>
+    <!-- run car finish  -*********************************-->
+
+    <!-- start menu2 ******************************-->
+    <div class="menu2">
+      <div class="section1">
+        <div class="headingMC">
+          <h2>Explore the New Mercedec Benz</h2> 
+        </div>
+        <div class="MCinfo">Eum nihil pretium quas aliqua, laboris ipsam diam congue natoque mollitia occaecati! Cubilia pede, numquam fringilla proident dis? Molestias repellat.
+                                 <br><br>Quas perferendis urna, officiis necessitatibus deserunt recusandae urna ullamco hac do beatae cubilia iste dolorum, facilisi? Sit, hic, varius! Sollicitudin.
+                                 <br><br>Nostrum feugiat beatae proident porro eleifend adipiscing nostrud aliquid sit.</span>
+                                </div>
+                              <button>KNOW MORE</button>
+      </div>
+      <div class="section2"><img src="/img/bg1.png" alt="Car"></div>
+      <div class="section3">
+        <div class="LBL"> <div class="box-icon">
+          <a href="#"><i class="fa-solid fa-car-battery"></i></a>
+                                                      </div>
+          <div class="box-content">
+            <h3>Long Battery Life</h3>
+            <p>Canvas provides support for Native HTML5 Videos that can be added to a Background.</p>
+            </div>
+        </div>
+        <div class="service"> 
+          <div class="box-icon">
+          <a href="#"><i class="fas fa-tools"></i></a>
+          </div>
+          <div class="box-content">
+          <h3>24x7 Service</h3>
+          <p>Complete control on each &amp; every element that provides endless customization.</p>
+          </div> </div>
+        <div class="LPG"> <div class="box-icon">
+          <a href="#"><i class="fas fa-gas-pump"></i></a>
+          </div>
+          <div class="box-content">
+          <h3>Petrol, Diesel &amp; LPG</h3>
+          <p>Change your Website's Primary Scheme instantly by simply adding the dark class.</p>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu 3 start-->
+    <div class="menu3">
+      <div class="main">
+        <div class="background-img"><img src="/img/bg.png">
+        </div>
+        <div class="slider slide-show">
+          <div class="sclick1 "> 
+            <div class="player">
+               <div class="header"> <h3> BMW-3 SERIS </h3> <br>
+                <h2>  BMW 3 SERIES SEDAN</h2> 
+                 <img src="/slick/1.png"> 
+               </div>
+                  <div class="info"> <h2> $2.300</h2><br>
+                                  <p>There is, one knows not what sweet mystery about this sea, whose gently awful stirrings seem to speak of some hidden soul beneath; like those fabled undulations of. </p>
+                                  <br><button>Know More</button>
+                                </div> 
+                              </div>
+  
+          </div>
+          <div class="sclick2 "> 
+            <div class="player">
+                <div class="header"> <h3> AUDI </h3> <br><h2>  AUDI A4-SEDAN</h2> 
+                <img src="/slick/2.png"> 
+                </div>
+            
+              <div class="info"> <h2> $2.300</h2><br>
+                               <p>There is, one knows not what sweet mystery about this sea, whose gently awful stirrings seem to speak of some hidden soul beneath; like those fabled undulations of. </p>
+                               <button>Know More</button>
+              </div> 
+            </div>
+          </div>
+
+          <div class="sclick3 ">
+            <div class="player">
+                <div class="header"> <h3> FORD MUSTANG </h3> <br><h2>  BRAND NEW MUSTANG</h2> 
+                 <img src="/slick/3.png">
+                </div>
+            
+              <div class="info"> <h2> $2.300</h2><br>
+                               <p>There is, one knows not what sweet mystery about this sea, whose gently awful stirrings seem to speak of some hidden soul beneath; like those fabled undulations of. </p>
+                               <button>Know More</button>
+              </div>
+            </div>    
+          </div>
+
+          <div class="sclick4 "> 
+            <div class="player">
+                <div class="header"> <h3>AUDI VONVERTIBLE  </h3> <br><h2>  AUDI A3 CABRIOLET</h2> 
+                 <img src="/slick/4.png"> 
+                </div>
+            
+              <div class="info"> <h2> $2.300</h2><br>
+                               <p>There is, one knows not what sweet mystery about this sea, whose gently awful stirrings seem to speak of some hidden soul beneath; like those fabled undulations of. </p>
+                               <button>Know More</button>
+              </div> 
+            </div>
+          </div>
+
+          <div class="sclick5 "> 
+            <div class="player">
+                <div class="header"> <h3> MERCEDES-BENZ </h3> <br><h2>MERCEDES-BENZ E-CLASS</h2> 
+                 <img src="/slick/5.png"> 
+                </div>
+              <div class="info"> <h2> $2.300</h2><br>
+                               <p>There is, one knows not what sweet mystery about this sea, whose gently awful stirrings seem to speak of some hidden soul beneath; like those fabled undulations of. </p>
+                               <button>Know More</button>
+              </div> 
+             </div>
+            </div>
+          </div>
+        <div class="slider slider-nav">
+            <button class="pic-nav">
+                 <div class="pic"><img src="/slick/1.png" alt="car1"></div>
+                <div class="nav-info">
+                  <div class=" car-shape">Sedan <br> </div> 
+                  <div class="nav-properti">3 Series Sedan</div>
+                </div>
+            </button>
+
+            <button class="pic-nav">
+              <div class="pic"><img src="/slick/2.png" alt="car2"></div>
+               <div class="nav-info">
+                <div class=" car-shape"> Sedan <br> </div>
+                <div class="nav-properti">Audi A4 - White</div>
+               </div>
+             </button>
+
+            <button class="pic-nav">
+              <div class="pic"><img src="/slick/3.png" alt="car3"></div>
+              <div class="nav-info"> 
+                <div class=" car-shape">Sedan<br> </div>
+                <div class="nav-properti">Brand New Mustand</div>
+              </div>
+            </button>
+            <button class="pic-nav">
+              <div class="pic"><img src="/slick/4.png" alt="car4"></div>
+              <div class="nav-info">
+                <div class=" car-shape">Convertible <br></div> 
+                <div class="nav-properti"> Audi A3 Calriolet</div>
+              </div>
+            </button>
+            <button class="pic-nav">
+              <div class="pic"><img src="/slick/5.png" alt="car5"></div>
+              <div class="nav-info">
+               <div class=" car-shape">Sedan <br> </div>
+               <div class="nav-properti">Mercedens-Benz Class</div>
+              </div>
+            </button>
+        </div>
+    </div>
+  </div>
+    <!-- Menu 3 finish-->
+<!-- 360 degree car  start ******************************************************************************-->
+<div class="menu_4">
+
+    <div class="degree_car"> 
+       <div class="header"><h3>360 Degree Drag</h3> </div>
+       <div class="car_rotation">
+            <input type="range" value="" min="1" max="51" id="range">
+            <div id="main">
+            <img src="/360degree/1.png"></div>
+       </div>
+    </div> 
+    <div class="select">
+      <div class="seleck_header"><h3 >Select other Models</h3> <br><span>Intrinsicly formulate plug-and-play systems with interactive communities. Quickly aggregate plug-and-play.</span></div>
+      <form id="login-form" name="login-form" class="row mb-0" action="#" method="post">
+        <div class="col-12 form-group">
+        <div class="dropdown bootstrap-select w-100 customjs"><select class="selectpicker w-100 customjs" title="Select Brand" data-live-search="true" data-size="6"><option class="bs-title-option" value=""></option>
+        <option value="AUDI">Audi</option>
+        <option value="BMW All Series">BMW All Series</option>
+        <option value="HONDA">Honda</option>
+        <option value="MERCEDES-BENZ">MERCEDES-BENZ</option>
+        <option value="HONDA">Manza</option>
+        <option value="MERCEDES-BENZ">Huyndai</option>
+        </select><button type="button" tabindex="-1" class="btn dropdown-toggle bs-placeholder btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" title="Select Brand"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Select Brand</div></div> </div></button><div class="dropdown-menu "><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-1" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-1" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+        </div>
+        <div class="col-12 form-group">
+        <div class="dropdown bootstrap-select w-100 customjs"><select class="selectpicker w-100 customjs" data-size="6" data-live-search="true" title="Select Model" style="line-height: 30px;"><option class="bs-title-option" value=""></option>
+        <optgroup label="AUDI">
+        <option value="R8">Audi R8</option>
+        <option value="TT">Audi TT</option>
+        <option value="S5">Audi S5</option>
+        <option value="A5">Audi A5</option>
+        <option value="TTS">Audi TTS</option>
+        <option value="RS5">Audi RS 5</option>
+        </optgroup>
+        <optgroup label="BMW All Series">
+        <option value="1-Series">BMW 1 Series 5-Door</option>
+        <option value="Series-ActiveE">BMW 1 Series ActiveE</option>
+        <option value="3-Series-Sedan">BMW 3 Series Sedan</option>
+        <option value="ActiveHybrid-3">BMW ActiveHybrid 3</option>
+        <option value="5-Series-Sedan">BMW 5 Series Sedan</option>
+        <option value="ActiveHybrid-5">BMW ActiveHybrid 5</option>
+        <option value="7-Series">BMW 7 Series</option>
+        <option value="ActiveHybrid-7">BMW ActiveHybrid 7</option>
+        <option value="M3-Sedan">BMW M3 Sedan</option>
+        <option value="M5-Sedan">BMW M5 Sedan</option>
+        <option value="3-Series-Turismo">BMW 3 Series Gran Turismo</option>
+        <option value="5=Series-Turismo">BMW 5 Series Gran Turismo</option>
+        </optgroup>
+        <optgroup label="HONDA">
+        <option value="Fit">Honda Fit</option>
+        <option value="City">Honda City</option>
+        <option value="Civic">Honda Civic</option>
+        <option value="Fit-EV1">Honda Fit EV1</option>
+        <option value="Accord">Honda Accord</option>
+        <option value="Crosstour">Honda Crosstour</option>
+        <option value="FCX-Clarity">Honda FCX Clarity</option>
+        <option value="Civic-Hybrid">Honda Civic Hybrid</option>
+        <option value="Accord-Hybrid">Honda Accord Hybrid</option>
+        <option value="Accord-Plug-In">Honda Accord Plug-In</option>
+        </optgroup>
+        <optgroup label="MERCEDES-BENZ">
+        <option value="S-Class">2021 Mercedes-Benz S-Class Sedan</option>
+        <option value="C-Class">2021 Mercedes-Benz C-Class Sedan</option>
+        <option value="E-Class">2021 Mercedes-Benz E-Class Sedan</option>
+        <option value="E-Class-Hybrid">2021 Mercedes-Benz E-Class Hybrid</option>
+        <option value="Maybach-S600">2021 Mercedes-Benz Maybach S600</option>
+        <option value="B-Class-Electric-Drive">2021 Mercedes-Benz B-Class Electric Drive</option>
+        </optgroup>
+        </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light" data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" title="Audi R8"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Audi R8</div></div> </div></button><div class="dropdown-menu "><div class="bs-searchbox"><input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-2" aria-autocomplete="list"></div><div class="inner show" role="listbox" id="bs-select-2" tabindex="-1"><ul class="dropdown-menu inner show" role="presentation"></ul></div></div></div>
+        </div>
+        <div class="col-12 form-group">
+        <button class="search" id="login-form-submit" name="login-form-submit" value="login">Search</button>
+        </div>
+        </form>
+
+
+  
+
+    </div>
+
+</div>
+<!--/* start menu 5******************************/*/-->
+<div class="menu5">
+  <div class="main">
+
+      <div class="header"><p> LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING.</p> 
+        <h3>FEATURED VEHICLES</h3>
+        <hr>
+      </div>
+    <div id="myBtnContainer">
+        <button class="btn" onclick="filterSelection('car1')">
+          <div class="contain"> 
+            <i class="fas fa-car"></i>
+            <div class="name"> Cuv</div> 
+          </div>
+        </button>
+        <button class="btn" onclick="filterSelection('car2')"> 
+          <div class="contain"> 
+            <i class="fas fa-car"></i>
+             <div class="name"> SEDAN</div> 
+          </div>
+        </button>
+        <button class="btn" onclick="filterSelection('car3')">
+          <div class="contain"> 
+            <i class="fas fa-car"></i>
+            <div class="name"> SUPERCAR</div> 
+          </div> 
+        </button>
+        <button class="btn" onclick="filterSelection('car4')"> 
+          <div class="contain"> 
+            <i class="fas fa-car"></i>
+            <div class="name">HATCHBACK</div> 
+          </div>
+        </button>
+        <button class="btn" onclick="filterSelection('car5')">
+          <div class="contain"> 
+            <i class="fas fa-car"></i>
+            <div class="name">CARBIOLET</div> 
+          </div> 
+        </button>
+        <button class="btn" onclick="filterSelection('car6')"> 
+          <div class="contain"> 
+            <i class="fas fa-car"></i>
+            <div class="name">4WD</div> 
+          </div> 
+        </button>
+       
+      <button class=" all" onclick="filterSelection('all')"> Show all</button>
+    </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column car1">
+        <div class="car-img">
+        <img src="/img/filter_grid/1.jpg" alt="car1">
+        <div class="price"><span >$32,568 MSRP : <strong>$35,698</strong></span></div>
+        </div>
+        <div class="pofil-info"> <h3> Ford Mustang - White</h3>
+           <span> Dramatically synthesize parallel applications vis-a-vis revolutionary e-tailers. Monotonectally incubate cooperative partnerships.</span> 
+        </div>
+          <hr>
+        <div class="properti">
+            <div class="col">  <img src="https://img.icons8.com/ios/100/null/speedometer.png"/> <span> 20000</span></div>
+            <div class="col">  <img src="https://img.icons8.com/dotty/100/null/car-door.png"/><span> 5 Seater</span></div>
+            <div class="col">  <img src="https://img.icons8.com/small/16/null/fuel-filter-warning--v2.png"/><span> 20kmpl</span></div>
+            <div class="col">  <img src="https://img.icons8.com/ios/50/null/gear-stick.png"/>  <span> Automatic</span></div>
+            <div class="col">  <img src="https://img.icons8.com/material-outlined/24/null/signal-app.png"/> 15 Inch</span></div>
+            <div class="col">  <img src="https://img.icons8.com/ios/50/null/car-cleaning.png"/> <span> 2021</span></div>      
+        </div>
+      </div>
+      <div class="column car2">
+        <div class="car-img">
+        <img src="/img/filter_grid/2.jpg" alt="car2">
+        <div class="price"><span >$32,568 MSRP : <strong>$35,698</strong></span></div>
+        </div>
+        <div class="pofil-info"> <h3> Chevrolet Brown Traverse- White</h3>
+           <span> Enthusiastically incubate turnkey technologies for exceptional materials. Seamlessly implement emerging scenarios.</span> 
+        </div>
+          <hr>
+        <div class="properti">
+            <div class="col">  <img src="https://img.icons8.com/ios/100/null/speedometer.png"/> <span> 0-50mph</span></div>
+            <div class="col">  <img src="https://img.icons8.com/dotty/100/null/car-door.png"/><span> 7 Seater</span></div>
+            <div class="col">  <img src="https://img.icons8.com/small/16/null/fuel-filter-warning--v2.png"/><span> 20kmpl</span></div>
+            <div class="col">  <img src="https://img.icons8.com/ios/50/null/gear-stick.png"/>  <span>Manual</span></div>
+            <div class="col">  <img src="https://img.icons8.com/material-outlined/24/null/signal-app.png"/> 15 Inch</span></div>
+            <div class="col">  <img src="https://img.icons8.com/ios/50/null/car-cleaning.png"/> <span> 2021</span></div>      
+        </div>
+      </div>
+       
+    
+      <div class="column car3">
+        <div class="car-img">
+        <img src="/img/filter_grid/3.jpg" alt="car3">
+        <div class="price"><span >$62.300 MSRP : <strong>$62.700</strong></span></div>
+      </div>
+        <div class="pofil-info"> <h3> Audi 2021 S5 Cabriolet</h3>
+           <span> Competently evolve intuitive synergy without corporate human capital. Monotonectally.</span> 
+        </div>
+          <hr>
+        <div class="properti">
+            <div class="col">  <img src="https://img.icons8.com/ios/100/null/speedometer.png"/> <span> 0-60mph</span></div>
+            <div class="col"> <img src="https://img.icons8.com/fluency-systems-regular/48/000000/measuring-cylinder--v2.png"/><span> Six cylinder</span></div>
+            <div class="col">  <img src="https://img.icons8.com/small/16/null/fuel-filter-warning--v2.png"/><span> 23kmpl</span></div>
+            <div class="col">  <img src="https://img.icons8.com/ios/50/null/gear-stick.png"/>  <span>Automatic</span></div>
+            <div class="col">  <img src="https://img.icons8.com/ios/50/null/car-cleaning.png"/> <span> 2021</span></div>      
+        </div>
+      </div>
+      <div class="column car4">
+        <div class="car-img">
+        <img src="/img/filter_grid/4.jpg" alt="car4">
+        <div class="price"><span >$32.568 MSRP : <strong>$35.700</strong></span></div>
+      </div>
+        <div class="pofil-info"> <h3> BMW 3 Series, ABS</h3>
+           <span> Energistically engineer user friendly synergy vis-a-vis enabled channels. Rapidiously utilize value-added. Laudantium debitis perferendis obcaecati.</span> 
+        </div>
+          <hr>
+        <div class="properti">
+            <div class="col">  <img src="https://img.icons8.com/ios/100/null/speedometer.png"/> <span> 0-80mph</span></div>
+            <div class="col"> <img src="https://img.icons8.com/fluency-systems-regular/48/000000/measuring-cylinder--v2.png"/><span> Hybrid</span></div>
+            <div class="col">  <img src="https://img.icons8.com/small/16/null/fuel-filter-warning--v2.png"/><span> 3000</span></div>
+            <div class="col">  <img src="https://img.icons8.com/ios/50/null/gear-stick.png"/>  <span>Automatic</span></div>
+            <div class="col">  <img src="https://img.icons8.com/ios/50/null/car-cleaning.png"/> <span> 2021</span></div>      
+        </div>
+      </div>
+      <div class="column car5">
+        <div class="car-img">
+        <img src="/img/filter_grid/5.jpg" alt="car5">
+        <div class="price"><span >$32.568 MSRP : <strong>$35.698</strong></span></div>
+      </div>
+        <div class="pofil-info"> <h3> 2021 LEXUS IS 200T FSPOR</h3>
+           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium debitis unde laboriosam perferendis obcaecati.</span> 
+        </div>
+          <hr>
+          <div class="properti">
+            <div class="col">  <img src="https://img.icons8.com/ios/100/null/speedometer.png"/> <span>30.000 mi</span></div>
+            <div class="col">  <img src="https://img.icons8.com/dotty/100/null/car-door.png"/><span>Metalic</span></div>
+            <div class="col">  <img src="https://img.icons8.com/small/16/null/fuel-filter-warning--v2.png"/><span> 11kmpl</span></div>
+            <div class="col">  <img src="https://img.icons8.com/ios/50/null/gear-stick.png"/>  <span>Automatic</span></div>
+            <div class="col">  <img src="https://img.icons8.com/material-outlined/24/null/signal-app.png"/> 18 Inch</span></div>
+            <div class="col">  <img src="https://img.icons8.com/ios/50/null/car-cleaning.png"/> <span> 2021</span></div>      
+        </div>
+      </div>
+      <div class="column car6">
+        <div class="car-img">
+        <img src="/img/filter_grid/6.jpg" alt="car6">
+        <div class="price"><span >$32.568 MSRP : <strong>$35.698</strong></span></div>
+      </div>
+        <div class="pofil-info"> <h3> Chevrolet T430 Hatchback </h3>
+           <span> Appropriately exploit strategic niche markets rather than optimal products. Enthusiastically negotiate perferendis the art methods of empowermen.</span> 
+        </div>
+          <hr>
+          <div class="properti">
+            <div class="col">  <img src="https://img.icons8.com/ios/100/null/speedometer.png"/> <span>20000</span></div>
+            <div class="col">  <img src="https://img.icons8.com/dotty/100/null/car-door.png"/><span>5 Seater</span></div>
+            <div class="col">  <img src="https://img.icons8.com/small/16/null/fuel-filter-warning--v2.png"/><span> 20kmpl</span></div>
+            <div class="col">  <img src="https://img.icons8.com/ios/50/null/gear-stick.png"/>  <span>Automatic</span></div>
+            <div class="col">  <img src="https://img.icons8.com/material-outlined/24/null/signal-app.png"/> 15 Inch</span></div>
+            <div class="col">  <img src="https://img.icons8.com/ios/50/null/car-cleaning.png"/> <span> 2021</span></div>      
+        </div>
+      </div>
+    
+    <!-- END GRID -->
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+    
+</div>
+
+<!--/* start menu 6********************************************************************************************************************/*/-->
+<div class="menu6">
+  <div class="header"><h2>Video Gallery  <br>____  </h2> </div>
+  <div class="videos">
+    <div class="video 1">
+       <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+       <source src="/videos/1.mp4" type="video/mp4"></source>      </video>
+        <div class="text">
+          <div class="heading-text">Mercedes</div>
+          <h2 class=" ls1">Mercedes-AMG GT</h2>
+        </div>
+    </div>
+    <div class="video 2">
+        <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="/videos/2.mp4" type="video/mp4"></source>
+        </video>
+        <div class="text">
+          <div class="heading-text">Mercedes</div>
+          <h2 class="ls1">Mercedes-AMG C 63</h2>
+        </div>
+    </div>
+    <div class="video 3">
+        <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="/videos/3.mp4" type="video/mp4"></source>
+        </video>
+        <div class="text">
+          <div class="heading-text">BMW Auto</div>
+          <h2 class=" ls1">BMW Z4 Roadster</h2>
+        </div>
+    </div>
+      <div class="video 4">
+        <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+        <source src="/videos/4.mp4" type="video/mp4"></source>
+        </video>
+        <div class="text">
+          <div class="heading-text">Mercedes Benz</div>
+          <h2 class=" ls1">Mercedes-COUPE GLE 63T</h2>
+        </div>
+      </div>  
+  </div>
+</div>
+<!-- menu 7******************************************************************-->
+<div class="menu7">
+  <div class="wrapper">
+    <div class="container">
+       <i class="fas fa-car"></i>
+       <span class="num"  data-val="3665">0</span>
+       <span class="text"> <h5>Happy Customers</h5></span>
+    </div>
+  
+    <div class="container">
+      <i class="fas fa-car"></i>
+       <span class="num" data-val="145">0</span>
+       <span class="text"><h5>Cars in Stock</h5></span>
+    </div>
+  
+    <div class="container">
+      <i class="fas fa-car"></i>
+       <span class="num" data-val="250">000</span>
+       <span class="text"><h5>SHOWROOMS</h5></span>
+    </div>
+  
+    <div class="container">
+      <i class="fas fa-car"></i>
+       <span class="num" data-val="7664">0</span>
+       <span class="text"><h5>AWWARDS</h5></span>
+    </div>
+  
+  </div>
+
+</div>
+<!-- menu 8****************************************************-->
+<div class="menu8">
+  <div class="body">
+  <div class="header"><h3> OUR Fleet<br>Your Fleet</h3> <br> _______________    </div>
+      <div class="info"> <p>Assertively iterate enterprise-wide portals through synergistic products. Efficiently build adaptive schemas after transparent quality vectors. Phosfluorescently optimize competitive resources after extensive convergence. Rapidiously optimize high-quality meta-services via distributed architectures. Credibly deliver 24/365.</p>
+                             </div>
+    
+      <div class="prop"> 
+        <div class="prop1">
+        <img src="https://img.icons8.com/ios/50/null/car-cleaning.png">
+        <h3>Skilled Professionals.</h3>
+        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est perspiciatis mollitia.</p>
+         </div>
+        <div class="prop2">   
+        <img src="https://img.icons8.com/ios/50/null/car-cleaning.png">     <h3>Skilled Professionals.</h3>
+        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum est perspiciatis mollitia.</p>
+        </div>
+
+      </div>
+   </div>
+</div>
+<!-- menu9 start **************************************************-->
+<div class="menu9">
+ <div class="section1">
+  <i class="fa-solid fa-chevron-down"></i>
+  <h3>Are You Looking for a New Car?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aspernatur, doloribus. Aspernatur, maiores earum eaque quas temporibus eius dolore dicta.</p>
+  <button class="B1"> KNOW MORE</button>
+ </div>
+ <div class="section2"> 
+  <i class="fa-solid fa-chevron-down"></i>
+   <h3>WANT TO SELL A USED Car?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aspernatur, doloribus. Aspernatur, maiores earum eaque quas temporibus eius dolore dicta.</p>
+  <button class="B2"> KNOW MORE</button>
+ </div>
+</div>
+</div>
+
+<div class="menu10">
+  <div class="info">
+    <h2>Raise Your Heart</h2>
+    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsa necessitatibus rem facere perspiciatis neque laborum est, illum commodi sunt, nobis voluptas.</p>
+    <a >Request a Quote</a> →
+  </div>
+</div>
+ 
+<div class="footer">
+  <div class="HCLA">
+    <div class="header hire">
+        <h4>Hire</h4>
+      <ul>
+         <li><a href="#">Documentation</a></li>
+         <li><a href="#">Feedback</a></li>
+         <li><a href="#">Plugins</a></li>
+      </ul>
+    </div>
+    <div class="header com"> 
+       <h4>Community</h4>
+      <ul>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Plugins</a></li>
+        <li><a href="#">Support Forums</a></li>
+      </ul>
+    </div>
+    <div class="header learn"> 
+       <h4>Learn</h4>
+        <ul>
+         <li><a href="#">Documentation</a></li>
+         <li><a href="#">Feedback</a></li>
+         <li><a href="#">Plugins</a></li>
+        </ul>
+    </div>
+    <div class="header about"> 
+      <h4>About</h4>
+      <ul>
+      <li><a href="#">Documentation</a></li>
+      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Plugins</a></li>
+      </ul>
+    </div>
+  </div>
+ <div class=" text-lg-end">
+        <img src="/img/logo-footer.png" alt="Image" height="50">
+        <br>
+        <div class="footer-info" >
+           <span>© Canvas Automotive. All Rights Reserved.</span>
+           <p style="margin-top: 10px;">Objectively restore standards compliant opportunities whereas one-to-one collaboration and idea-sharing.</p>
+       </div>
+  </div>
+ 
+ </div>        
+</div>
+      
+  <!-- /div>Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+ 
+ 
+</body>
+</html>
